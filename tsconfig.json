@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    },
     "rootDir": "./",
     "outDir": "dist",
     "strict": true,
@@ -11,6 +16,9 @@
   "include": [
     "index.ts",
     "server.ts",
-    "src/**/*"
+    "src/**/*",
+    "client/**/*",
+    "routes/**/*",
+    "shared/**/*"
   ]
 }
